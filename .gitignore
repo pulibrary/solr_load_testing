@@ -1,1 +1,3 @@
 jmeter.log
+test_results/*
+!test_results/.keep
