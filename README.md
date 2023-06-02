@@ -31,3 +31,58 @@ There are capistrano tasks to connect to the Solr UI for managing solr that can 
 
 * Would it be better to go from a server on Princeton's network (e.g., the bibdata-staging worker machine), so that Developer's internet connection doesn't affect benchmarking
 
+## Running from loadtest.lib.princeton.edu
+* Copy the test file onto the remote host
+```bash
+scp test_from_loadtest.jmx deploy@loadtest.lib.princeton.edu:~/
+```
+* SSH onto the box
+```bash
+ssh deploy@loadtest.lib.princeton.edu
+```
+* Run the jmeter test from loadtest.lib.princeton.edu
+```bash
+jmeter -n -t solr_test_plan.jmx
+```
+
+## User Defined Variables by Environment
+### Development
+host orangelight.dev.solr.lndo.site
+port 80
+solr_core orangelight-core-dev
+kw_expected_result_count 1
+sitemap_expected_result_count 255
+
+### Tunneled into Staging
+host localhost
+port [different each time - use output from tunnel command above]
+solr_core catalog-staging
+kw_expected_result_count 12941
+sitemap_expected_result_count 18170086
+
+### From loadtest.princeton.edu - against Staging
+host lib-solr8-staging.princeton.edu
+port 8983
+solr_core catalog-staging
+kw_expected_result_count 12941
+sitemap_expected_result_count 18170086
+
+
+### Generate HTML report
+1. Run the test using the CLI mode
+1. Once the test has completed, open the JMeter GUI
+1. Find where your user.properties file is for your install of JMeter
+  * I used Homebrew to install locally, so to find the actual location, I did:
+  ```bash
+  ➜  ~ brew --prefix jmeter
+/opt/homebrew/opt/jmeter
+➜  ~ ls -la /opt/homebrew/opt/jmeter
+lrwxr-xr-x  1 kadelm  admin  20 May 30 09:28 /opt/homebrew/opt/jmeter -> ../Cellar/jmeter/5.5
+  ```
+  * For homebrew installs, the `user.properties` file is in the symlinked directory, under `/opt/homebrew/Cellar/jmeter/5.5/libexec/bin/user.properties`
+1. In JMeter, go to Tools > Generate HTML report
+  1. For "Results file" Select the newly created `test_results/simple_data_writer.csv` file
+  1. For "user.properties file" put in the path you found above
+  1. For "Output directory" create an empty directory
+  1. Click "Generate report"
+1. Open the generated index.html file using your browser
