@@ -32,9 +32,14 @@ There are capistrano tasks to connect to the Solr UI for managing solr that can 
 * Would it be better to go from a server on Princeton's network (e.g., the bibdata-staging worker machine), so that Developer's internet connection doesn't affect benchmarking
 
 ## Running from loadtest.lib.princeton.edu
+* Ensure the User Defined Variables in the Solr test plan are correct and saved for the environment
 * Copy the test file onto the remote host
 ```bash
-scp test_from_loadtest.jmx deploy@loadtest.lib.princeton.edu:~/
+scp solr_test_plan.jmx deploy@loadtest.lib.princeton.edu:~/
+```
+* Copy the keywords file onto the remote host
+```bash
+scp keywords.csv deploy@loadtest.lib.princeton.edu:~/
 ```
 * SSH onto the box
 ```bash
@@ -44,7 +49,10 @@ ssh deploy@loadtest.lib.princeton.edu
 ```bash
 jmeter -n -t solr_test_plan.jmx
 ```
-
+* Copy the results to your local machine (from the local)
+```bash
+scp deploy@loadtest.lib.princeton.edu:~/test_results/simple_data_writer.csv ./test_results
+```
 ## User Defined Variables by Environment
 ### Development
 host orangelight.dev.solr.lndo.site
@@ -52,6 +60,7 @@ port 80
 solr_core orangelight-core-dev
 kw_expected_result_count 1
 sitemap_expected_result_count 255
+keyword_file_full_path [full path to this repo + /keywords.csv]
 
 ### Tunneled into Staging
 host localhost
@@ -59,6 +68,7 @@ port [different each time - use output from tunnel command above]
 solr_core catalog-staging
 kw_expected_result_count 12941
 sitemap_expected_result_count 18170086
+keyword_file_full_path [full path to this repo + /keywords.csv]
 
 ### From loadtest.princeton.edu - against Staging
 host lib-solr8-staging.princeton.edu
@@ -66,7 +76,7 @@ port 8983
 solr_core catalog-staging
 kw_expected_result_count 12941
 sitemap_expected_result_count 18170086
-
+keyword_file_full_path /home/deploy/keywords.csv
 
 ### Generate HTML report
 1. Run the test using the CLI mode
