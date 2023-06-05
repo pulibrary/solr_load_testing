@@ -514,7 +514,7 @@
                 <connectTime>true</connectTime>
               </value>
             </objProp>
-            <stringProp name="filename">~/keyword_results_tree.xml</stringProp>
+            <stringProp name="filename">~/test_results/keyword_results_tree.xml</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
