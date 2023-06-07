@@ -49,34 +49,40 @@ ssh deploy@loadtest.lib.princeton.edu
 ```bash
 jmeter -n -t solr_test_plan.jmx
 ```
-* Copy the results to your local machine (from the local)
+* Copy the results to your local machine (from the remote)
 ```bash
 scp deploy@loadtest.lib.princeton.edu:~/test_results/simple_data_writer.csv ./test_results
 ```
 ## User Defined Variables by Environment
 ### Development
+```
 host orangelight.dev.solr.lndo.site
 port 80
 solr_core orangelight-core-dev
 kw_expected_result_count 1
 sitemap_expected_result_count 255
 keyword_file_full_path [full path to this repo + /keywords.csv]
+```
 
 ### Tunneled into Staging
+```
 host localhost
 port [different each time - use output from tunnel command above]
 solr_core catalog-staging
 kw_expected_result_count 12941
 sitemap_expected_result_count 18170086
 keyword_file_full_path [full path to this repo + /keywords.csv]
+```
 
 ### From loadtest.princeton.edu - against Staging
+```
 host lib-solr8-staging.princeton.edu
 port 8983
 solr_core catalog-staging
 kw_expected_result_count 12941
 sitemap_expected_result_count 18170086
 keyword_file_full_path /home/deploy/keywords.csv
+```
 
 ### Generate HTML report
 1. Run the test using the CLI mode
