@@ -49,9 +49,13 @@ ssh deploy@loadtest.lib.princeton.edu
 ```bash
 jmeter -n -t solr_test_plan.jmx
 ```
-* Copy the results to your local machine (from the remote)
+* If you want to keep the results on the server, copy the results to a dated folder, e.g.
 ```bash
-scp deploy@loadtest.lib.princeton.edu:~/test_results/simple_data_writer.csv ./test_results
+mv test_results/ test_results-2023-06-07/
+```
+* Copy the results to your local machine (from the remote), e.g.
+```bash
+scp deploy@loadtest.lib.princeton.edu:~/test_results-2023-06-07/simple_data_writer.csv ./test_results
 ```
 ## User Defined Variables by Environment
 ### Development
