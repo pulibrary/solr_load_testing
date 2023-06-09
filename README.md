@@ -7,32 +7,13 @@ brew install jmeter
 ```bash
 jmeter
 ```
-1. From the GUI, select File > Open then browse to the test plan you want to work on (.e.g. `test_dev.jmx`)
+1. From the GUI, select File > Open then browse to the test plan you want to work on (.e.g. `solr_test_plan.jmx`)
 1. You may need to press the "plus" buttons to the left of the headers to see the full plan.
-1. If you are running against staging, first tunnel in using the instructions for pul_solr, below.
+1. Go to the User Defined Variables under the top-level "Solr test plan" and make sure the variables match the environment you want to work against (see [User Defined Variables by Environment below](#user-defined-variables-by-environment))
 1. In order to run the current test plan, click the green arrow button.
 
-## Notes for testing against staging
-Orangelight staging is configured to look at
-```yaml
-ol_solr_url: http://lib-solr8-staging.princeton.edu:8983/solr/catalog-staging
-```
-* I believe to connect to this instance you need to tunnel in
-* Notes from https://github.com/pulibrary/pul_solr#connecting-to-solr-ui:
-
-There are capistrano tasks to connect to the Solr UI for managing solr that can be run from the project directory on your machine.  You will need to be connected to VPN for the tasks to run.
-
- * Staging Solr 8
-   ```
-   # from the pul_solr repository
-   bundle exec cap staging solr:console
-   ```
-* This makes solr available locally at localhost:9307
-
-* Would it be better to go from a server on Princeton's network (e.g., the bibdata-staging worker machine), so that Developer's internet connection doesn't affect benchmarking
-
 ## Running from loadtest.lib.princeton.edu
-* Ensure the User Defined Variables in the Solr test plan are correct and saved for the environment
+* Ensure the User Defined Variables in the Solr test plan are correct and saved for the environment (see [User Defined Variables by Environment below](#user-defined-variables-by-environment))
 * Copy the test file onto the remote host
 ```bash
 scp solr_test_plan.jmx deploy@loadtest.lib.princeton.edu:~/
@@ -67,17 +48,6 @@ kw_expected_result_count 1
 sitemap_expected_result_count 255
 keyword_file_full_path [full path to this repo + /keywords.csv]
 ```
-
-### Tunneled into Staging
-```
-host localhost
-port [different each time - use output from tunnel command above]
-solr_core catalog-staging
-kw_expected_result_count 12941
-sitemap_expected_result_count 18170086
-keyword_file_full_path [full path to this repo + /keywords.csv]
-```
-
 ### From loadtest.princeton.edu - against Staging
 ```
 host lib-solr8-staging.princeton.edu
