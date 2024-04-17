@@ -97,9 +97,9 @@ keyword_file_full_path /home/deploy/keywords.csv
   ➜  ~ brew --prefix jmeter
 /opt/homebrew/opt/jmeter
 ➜  ~ ls -la /opt/homebrew/opt/jmeter
-lrwxr-xr-x  1 kadelm  admin  20 May 30 09:28 /opt/homebrew/opt/jmeter -> ../Cellar/jmeter/5.5
+lrwxr-xr-x  1 kadelm  admin  20 May 30 09:28 /opt/homebrew/opt/jmeter -> ../Cellar/jmeter/5.6.3
   ```
-  * For homebrew installs, the `user.properties` file is in the symlinked directory, under `/opt/homebrew/Cellar/jmeter/5.5/libexec/bin/user.properties`
+  * For homebrew installs, the `user.properties` file is in the symlinked directory, under `/opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties`
 1. In JMeter, go to Tools > Generate HTML report
   1. For "Results file" Select the newly created `test_results/simple_data_writer.csv` file
   1. For "user.properties file" put in the path you found above
