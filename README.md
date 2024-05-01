@@ -15,7 +15,7 @@ jmeter
 ## Notes for testing against staging
 Orangelight staging is configured to look at
 ```yaml
-ol_solr_url: http://lib-solr8-staging.princeton.edu:8983/solr/catalog-staging
+ol_solr_url: http://lib-solr8d-staging.princeton.edu:8983/solr/catalog-staging
 ```
 * I believe to connect to this instance you need to tunnel in
 * Notes from https://github.com/pulibrary/pul_solr#connecting-to-solr-ui:
@@ -47,16 +47,9 @@ ssh deploy@loadtest.lib.princeton.edu
 ```
 * Run the jmeter test from loadtest.lib.princeton.edu
 ```bash
-jmeter -n -t solr_test_plan.jmx
+jmeter -n -t solr_test_plan.jmx -e -l test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o ./test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
 ```
-* If you want to keep the results on the server, copy the results to a dated folder, e.g.
-```bash
-mv test_results/ test_results-2023-06-07/
-```
-* Copy the results to your local machine (from the remote), e.g.
-```bash
-scp deploy@loadtest.lib.princeton.edu:~/test_results-2023-06-07/simple_data_writer.csv ./test_results
-```
+* Look at the results on the web at loadtest.lib.princeton.edu/solr_tests/
 ## User Defined Variables by Environment
 ### Development
 ```
