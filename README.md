@@ -12,16 +12,11 @@ jmeter
 1. Go to the User Defined Variables under the top-level "Solr test plan" and make sure the variables match the environment you want to work against (see [User Defined Variables by Environment below](#user-defined-variables-by-environment))
 1. In order to run the current test plan, click the green arrow button.
 
-## Running from loadtest.lib.princeton.edu
+## Running from loadtest1.lib.princeton.edu
 * Ensure the User Defined Variables in the Solr test plan are correct and saved for the environment (see [User Defined Variables by Environment below](#user-defined-variables-by-environment))
-* Copy the test file onto the remote host
-```bash
-scp solr_test_plan.jmx deploy@loadtest1.lib.princeton.edu:~/
-```
-* Copy the keywords file onto the remote host
-```bash
-scp keywords.csv deploy@loadtest1.lib.princeton.edu:~/
-```
+* This project is checked out at `/home/deploy/solr_load_testing`
+* You can make changes locally, commit and push them to a branch, then check that branch out on the server
+
 * SSH onto the box
 ```bash
 ssh deploy@loadtest1.lib.princeton.edu
@@ -30,7 +25,7 @@ ssh deploy@loadtest1.lib.princeton.edu
 ```bash
 jmeter -n -t solr_test_plan.jmx -e -l test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o ./test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
 ```
-* Look at the results on the web at loadtest.lib.princeton.edu/solr_tests/
+* Look at the results on the web at loadtest.lib.princeton.edu/solr_tests/ (VPN required)
 ## User Defined Variables by Environment
 ### Development
 ```
@@ -69,3 +64,6 @@ lrwxr-xr-x  1 kadelm  admin  20 May 30 09:28 /opt/homebrew/opt/jmeter -> ../Cell
   1. For "Output directory" create an empty directory
   1. Click "Generate report"
 1. Open the generated index.html file using your browser
+
+### Record the trial in the spreadsheet
+Record what experiment you did, and a link to the report that was generated, in [this spreadsheet](https://docs.google.com/spreadsheets/d/1zvbCHYgnx0KFNtwVmNV6-yHDJN84kIRKbO5YvywiYFk/edit?usp=sharing).
