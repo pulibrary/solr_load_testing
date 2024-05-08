@@ -41,9 +41,9 @@ kw_expected_result_count 1
 sitemap_expected_result_count 255
 keyword_file_full_path [full path to this repo + /keywords.csv]
 ```
-### From loadtest.princeton.edu - against Staging
+### From loadtest1.lib.princeton.edu - against Staging
 ```
-host lib-solr8-staging.princeton.edu
+host lib-solr8d-staging.princeton.edu
 port 8983
 solr_core catalog-staging
 kw_expected_result_count 12941
