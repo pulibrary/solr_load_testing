@@ -32,7 +32,7 @@
           </elementProp>
           <elementProp name="keyword_file_full_path" elementType="Argument">
             <stringProp name="Argument.name">keyword_file_full_path</stringProp>
-            <stringProp name="Argument.value">/home/deploy/keywords.csv</stringProp>
+            <stringProp name="Argument.value">/home/deploy/solr_load_testing/keywords.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -62,7 +62,7 @@
         </elementProp>
       </SetupThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Single Keyword Request">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Single Keyword Request" enabled="true">
           <stringProp name="TestPlan.comments">Keyword search from homepage with single word query</stringProp>
           <stringProp name="HTTPSampler.domain">${host}</stringProp>
           <stringProp name="HTTPSampler.port">${port}</stringProp>
@@ -507,7 +507,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Multiple Keyword Request">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Multiple Keyword Request" enabled="true">
           <stringProp name="TestPlan.comments">Iterate through keywords - imitates search from homepage with single word query</stringProp>
           <stringProp name="HTTPSampler.domain">${host}</stringProp>
           <stringProp name="HTTPSampler.port">${port}</stringProp>
