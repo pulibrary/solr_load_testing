@@ -16,17 +16,17 @@ jmeter
 * Ensure the User Defined Variables in the Solr test plan are correct and saved for the environment (see [User Defined Variables by Environment below](#user-defined-variables-by-environment))
 * Copy the test file onto the remote host
 ```bash
-scp solr_test_plan.jmx deploy@loadtest.lib.princeton.edu:~/
+scp solr_test_plan.jmx deploy@loadtest1.lib.princeton.edu:~/
 ```
 * Copy the keywords file onto the remote host
 ```bash
-scp keywords.csv deploy@loadtest.lib.princeton.edu:~/
+scp keywords.csv deploy@loadtest1.lib.princeton.edu:~/
 ```
 * SSH onto the box
 ```bash
-ssh deploy@loadtest.lib.princeton.edu
+ssh deploy@loadtest1.lib.princeton.edu
 ```
-* Run the jmeter test from loadtest.lib.princeton.edu
+* Run the jmeter test from loadtest1.lib.princeton.edu
 ```bash
 jmeter -n -t solr_test_plan.jmx -e -l test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o ./test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
 ```
