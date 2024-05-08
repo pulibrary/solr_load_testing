@@ -16,28 +16,21 @@ jmeter
 * Ensure the User Defined Variables in the Solr test plan are correct and saved for the environment (see [User Defined Variables by Environment below](#user-defined-variables-by-environment))
 * Copy the test file onto the remote host
 ```bash
-scp solr_test_plan.jmx deploy@loadtest.lib.princeton.edu:~/
+scp solr_test_plan.jmx deploy@loadtest1.lib.princeton.edu:~/
 ```
 * Copy the keywords file onto the remote host
 ```bash
-scp keywords.csv deploy@loadtest.lib.princeton.edu:~/
+scp keywords.csv deploy@loadtest1.lib.princeton.edu:~/
 ```
 * SSH onto the box
 ```bash
-ssh deploy@loadtest.lib.princeton.edu
+ssh deploy@loadtest1.lib.princeton.edu
 ```
-* Run the jmeter test from loadtest.lib.princeton.edu
+* Run the jmeter test from loadtest1.lib.princeton.edu
 ```bash
-jmeter -n -t solr_test_plan.jmx
+jmeter -n -t solr_test_plan.jmx -e -l test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o ./test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
 ```
-* If you want to keep the results on the server, copy the results to a dated folder, e.g.
-```bash
-mv test_results/ test_results-2023-06-07/
-```
-* Copy the results to your local machine (from the remote), e.g.
-```bash
-scp deploy@loadtest.lib.princeton.edu:~/test_results-2023-06-07/simple_data_writer.csv ./test_results
-```
+* Look at the results on the web at loadtest.lib.princeton.edu/solr_tests/
 ## User Defined Variables by Environment
 ### Development
 ```
@@ -48,9 +41,9 @@ kw_expected_result_count 1
 sitemap_expected_result_count 255
 keyword_file_full_path [full path to this repo + /keywords.csv]
 ```
-### From loadtest.princeton.edu - against Staging
+### From loadtest1.lib.princeton.edu - against Staging
 ```
-host lib-solr8-staging.princeton.edu
+host lib-solr8d-staging.princeton.edu
 port 8983
 solr_core catalog-staging
 kw_expected_result_count 12941
@@ -67,9 +60,9 @@ keyword_file_full_path /home/deploy/keywords.csv
   ➜  ~ brew --prefix jmeter
 /opt/homebrew/opt/jmeter
 ➜  ~ ls -la /opt/homebrew/opt/jmeter
-lrwxr-xr-x  1 kadelm  admin  20 May 30 09:28 /opt/homebrew/opt/jmeter -> ../Cellar/jmeter/5.5
+lrwxr-xr-x  1 kadelm  admin  20 May 30 09:28 /opt/homebrew/opt/jmeter -> ../Cellar/jmeter/5.6.3
   ```
-  * For homebrew installs, the `user.properties` file is in the symlinked directory, under `/opt/homebrew/Cellar/jmeter/5.5/libexec/bin/user.properties`
+  * For homebrew installs, the `user.properties` file is in the symlinked directory, under `/opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties`
 1. In JMeter, go to Tools > Generate HTML report
   1. For "Results file" Select the newly created `test_results/simple_data_writer.csv` file
   1. For "user.properties file" put in the path you found above
