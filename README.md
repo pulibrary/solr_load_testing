@@ -23,7 +23,7 @@ ssh deploy@loadtest1.lib.princeton.edu
 ```
 * Run the jmeter test from loadtest1.lib.princeton.edu
 ```bash
-jmeter -n -t solr_test_plan.jmx -e -l test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o /home/deploy/solr_tests/test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
+jmeter -n -t /home/deploy/solr_load_testing/solr_test_plan.jmx -e -l /home/deploy/solr_load_testing/test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o /home/deploy/solr_tests/test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
 ```
 * Look at the results on the web at [loadtest.lib.princeton.edu/solr_tests/](https://loadtest.lib.princeton.edu/solr_tests/) (VPN required)
 ## User Defined Variables by Environment
