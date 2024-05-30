@@ -32,13 +32,11 @@
           </elementProp>
           <elementProp name="keyword_file_full_path" elementType="Argument">
             <stringProp name="Argument.name">keyword_file_full_path</stringProp>
-            <stringProp name="Argument.value">/home/deploy/keywords.csv</stringProp>
+            <stringProp name="Argument.value">/home/deploy/solr_load_testing/keywords.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
@@ -54,17 +52,17 @@
       </CSVDataSet>
       <hashTree/>
       <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group">
-        <intProp name="ThreadGroup.num_threads">50</intProp>
+        <intProp name="ThreadGroup.num_threads">200</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <stringProp name="LoopController.loops">500</stringProp>
+          <stringProp name="LoopController.loops">1000</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </SetupThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Single Keyword Request">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Single Keyword Request" enabled="true">
           <stringProp name="TestPlan.comments">Keyword search from homepage with single word query</stringProp>
           <stringProp name="HTTPSampler.domain">${host}</stringProp>
           <stringProp name="HTTPSampler.port">${port}</stringProp>
@@ -452,7 +450,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - status">
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - status" enabled="true">
             <stringProp name="JSON_PATH">$.responseHeader.status</stringProp>
             <stringProp name="EXPECTED_VALUE">0</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
@@ -471,7 +469,7 @@
             <boolProp name="ISREGEX">true</boolProp>
           </JSONPathAssertion>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -897,7 +895,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - status">
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - status" enabled="true">
             <stringProp name="JSON_PATH">$.responseHeader.status</stringProp>
             <stringProp name="EXPECTED_VALUE">0</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
