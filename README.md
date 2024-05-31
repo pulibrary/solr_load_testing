@@ -23,7 +23,10 @@ ssh deploy@loadtest1.lib.princeton.edu
 ```
 * Run the jmeter test from loadtest1.lib.princeton.edu
 ```bash
+# To test reads:
 jmeter -n -t /home/deploy/solr_load_testing/solr_test_plan.jmx -e -l /home/deploy/solr_load_testing/test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o /home/deploy/solr_tests/test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
+# To test writes:
+JVM_ARGS="-Xms2048m -Xmx2048m" jmeter -n -t /home/deploy/solr_load_testing/solr_write_test_plan.jmx -e -l /home/deploy/solr_load_testing/write_test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o /home/deploy/solr_tests/write_test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
 ```
 * Look at the results on the web at [loadtest.lib.princeton.edu/solr_tests/](https://loadtest.lib.princeton.edu/solr_tests/) (VPN required)
 ## User Defined Variables by Environment
@@ -40,7 +43,7 @@ keyword_file_full_path [full path to this repo + /keywords.csv]
 ```
 host lib-solr8d-staging.princeton.edu
 port 8983
-solr_core catalog-staging
+solr_core catalog-performance (for read test) or catalog-write-performance (for write test)
 kw_expected_result_count 12941
 sitemap_expected_result_count 18170086
 keyword_file_full_path /home/deploy/keywords.csv
