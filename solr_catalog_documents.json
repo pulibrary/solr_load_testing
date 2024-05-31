@@ -1,7 +1,7 @@
 [
     {
         "id": [
-            "9973971903506421"
+            "THREAD${__threadNum}_9973971903506421"
         ],
         "numeric_id_b": [
             true
@@ -201,7 +201,7 @@
     },
     {
         "id": [
-            "9973981683506421"
+            "THREAD${__threadNum}_9973981683506421"
         ],
         "numeric_id_b": [
             true
@@ -421,7 +421,7 @@
     },
     {
         "id": [
-            "9993826103506421"
+            "THREAD${__threadNum}_9993826103506421"
         ],
         "numeric_id_b": [
             true
@@ -600,7 +600,7 @@
     },
     {
         "id": [
-            "99108240313506421"
+            "THREAD${__threadNum}_99108240313506421"
         ],
         "numeric_id_b": [
             true
@@ -814,7 +814,7 @@
     },
     {
         "id": [
-            "99107093903506421"
+            "THREAD${__threadNum}_99107093903506421"
         ],
         "numeric_id_b": [
             true
@@ -1011,7 +1011,7 @@
     },
     {
         "id": [
-            "9957825863506421"
+            "THREAD${__threadNum}_9957825863506421"
         ],
         "numeric_id_b": [
             true
@@ -1210,7 +1210,7 @@
     },
     {
         "id": [
-            "9995522433506421"
+            "THREAD${__threadNum}_9995522433506421"
         ],
         "numeric_id_b": [
             true
@@ -1408,7 +1408,7 @@
     },
     {
         "id": [
-            "9995522533506421"
+            "THREAD${__threadNum}_9995522533506421"
         ],
         "numeric_id_b": [
             true
@@ -1621,7 +1621,7 @@
     },
     {
         "id": [
-            "9995550493506421"
+            "THREAD${__threadNum}_9995550493506421"
         ],
         "numeric_id_b": [
             true
@@ -1844,7 +1844,7 @@
     },
     {
         "id": [
-            "9995550673506421"
+            "THREAD${__threadNum}_9995550673506421"
         ],
         "numeric_id_b": [
             true
@@ -2042,7 +2042,7 @@
     },
     {
         "id": [
-            "9973971133506421"
+            "THREAD${__threadNum}_9973971133506421"
         ],
         "numeric_id_b": [
             true
@@ -2255,7 +2255,7 @@
     },
     {
         "id": [
-            "9959986023506421"
+            "THREAD${__threadNum}_9959986023506421"
         ],
         "numeric_id_b": [
             true
@@ -2441,7 +2441,7 @@
     },
     {
         "id": [
-            "99114344163506421"
+            "THREAD${__threadNum}_99114344163506421"
         ],
         "numeric_id_b": [
             true
@@ -2656,7 +2656,7 @@
     },
     {
         "id": [
-            "9995555443506421"
+            "THREAD${__threadNum}_9995555443506421"
         ],
         "numeric_id_b": [
             true
@@ -2844,7 +2844,7 @@
     },
     {
         "id": [
-            "9995555453506421"
+            "THREAD${__threadNum}_9995555453506421"
         ],
         "numeric_id_b": [
             true
@@ -3026,7 +3026,7 @@
     },
     {
         "id": [
-            "9985327493506421"
+            "THREAD${__threadNum}_9985327493506421"
         ],
         "numeric_id_b": [
             true
@@ -3184,7 +3184,7 @@
     },
     {
         "id": [
-            "99108238993506421"
+            "THREAD${__threadNum}_99108238993506421"
         ],
         "numeric_id_b": [
             true
@@ -3438,7 +3438,7 @@
     },
     {
         "id": [
-            "99115171723506421"
+            "THREAD${__threadNum}_99115171723506421"
         ],
         "numeric_id_b": [
             true
@@ -3746,7 +3746,7 @@
     },
     {
         "id": [
-            "99115172223506421"
+            "THREAD${__threadNum}_99115172223506421"
         ],
         "numeric_id_b": [
             true
@@ -4032,7 +4032,7 @@
     },
     {
         "id": [
-            "99111460813506421"
+            "THREAD${__threadNum}_99111460813506421"
         ],
         "numeric_id_b": [
             true
@@ -4292,7 +4292,7 @@
     },
     {
         "id": [
-            "99114633063506421"
+            "THREAD${__threadNum}_99114633063506421"
         ],
         "numeric_id_b": [
             true
@@ -4506,7 +4506,7 @@
     },
     {
         "id": [
-            "99116293793506421"
+            "THREAD${__threadNum}_99116293793506421"
         ],
         "numeric_id_b": [
             true
@@ -4777,7 +4777,7 @@
     },
     {
         "id": [
-            "99109482623506421"
+            "THREAD${__threadNum}_99109482623506421"
         ],
         "numeric_id_b": [
             true
@@ -5006,7 +5006,7 @@
     },
     {
         "id": [
-            "99109480973506421"
+            "THREAD${__threadNum}_99109480973506421"
         ],
         "numeric_id_b": [
             true
@@ -5284,7 +5284,7 @@
     },
     {
         "id": [
-            "9980695843506421"
+            "THREAD${__threadNum}_9980695843506421"
         ],
         "numeric_id_b": [
             true
@@ -5574,7 +5574,7 @@
     },
     {
         "id": [
-            "9991719383506421"
+            "THREAD${__threadNum}_9991719383506421"
         ],
         "numeric_id_b": [
             true
@@ -5801,7 +5801,7 @@
     },
     {
         "id": [
-            "99114183803506421"
+            "THREAD${__threadNum}_99114183803506421"
         ],
         "numeric_id_b": [
             true
@@ -6014,7 +6014,7 @@
     },
     {
         "id": [
-            "99114629963506421"
+            "THREAD${__threadNum}_99114629963506421"
         ],
         "numeric_id_b": [
             true
@@ -6252,7 +6252,7 @@
     },
     {
         "id": [
-            "99108237503506421"
+            "THREAD${__threadNum}_99108237503506421"
         ],
         "numeric_id_b": [
             true
@@ -6483,7 +6483,7 @@
     },
     {
         "id": [
-            "99114629573506421"
+            "THREAD${__threadNum}_99114629573506421"
         ],
         "numeric_id_b": [
             true
@@ -6687,7 +6687,7 @@
     },
     {
         "id": [
-            "99114630883506421"
+            "THREAD${__threadNum}_99114630883506421"
         ],
         "numeric_id_b": [
             true
@@ -6930,7 +6930,7 @@
     },
     {
         "id": [
-            "99118627863506421"
+            "THREAD${__threadNum}_99118627863506421"
         ],
         "numeric_id_b": [
             true
@@ -7121,7 +7121,7 @@
     },
     {
         "id": [
-            "9992773653506421"
+            "THREAD${__threadNum}_9992773653506421"
         ],
         "numeric_id_b": [
             true
@@ -7325,7 +7325,7 @@
     },
     {
         "id": [
-            "99111461023506421"
+            "THREAD${__threadNum}_99111461023506421"
         ],
         "numeric_id_b": [
             true
@@ -7577,7 +7577,7 @@
     },
     {
         "id": [
-            "99116291753506421"
+            "THREAD${__threadNum}_99116291753506421"
         ],
         "numeric_id_b": [
             true
@@ -7883,7 +7883,7 @@
     },
     {
         "id": [
-            "9989935523506421"
+            "THREAD${__threadNum}_9989935523506421"
         ],
         "numeric_id_b": [
             true
@@ -8064,7 +8064,7 @@
     },
     {
         "id": [
-            "99114184393506421"
+            "THREAD${__threadNum}_99114184393506421"
         ],
         "numeric_id_b": [
             true
@@ -8334,7 +8334,7 @@
     },
     {
         "id": [
-            "99114191623506421"
+            "THREAD${__threadNum}_99114191623506421"
         ],
         "numeric_id_b": [
             true
@@ -8588,7 +8588,7 @@
     },
     {
         "id": [
-            "99114632063506421"
+            "THREAD${__threadNum}_99114632063506421"
         ],
         "numeric_id_b": [
             true
@@ -8946,7 +8946,7 @@
     },
     {
         "id": [
-            "99111133263506421"
+            "THREAD${__threadNum}_99111133263506421"
         ],
         "numeric_id_b": [
             true
@@ -9196,7 +9196,7 @@
     },
     {
         "id": [
-            "99109481573506421"
+            "THREAD${__threadNum}_99109481573506421"
         ],
         "numeric_id_b": [
             true
@@ -9483,7 +9483,7 @@
     },
     {
         "id": [
-            "99109476553506421"
+            "THREAD${__threadNum}_99109476553506421"
         ],
         "numeric_id_b": [
             true
@@ -9729,7 +9729,7 @@
     },
     {
         "id": [
-            "99109475123506421"
+            "THREAD${__threadNum}_99109475123506421"
         ],
         "numeric_id_b": [
             true
@@ -9970,7 +9970,7 @@
     },
     {
         "id": [
-            "99114182443506421"
+            "THREAD${__threadNum}_99114182443506421"
         ],
         "numeric_id_b": [
             true
@@ -10259,7 +10259,7 @@
     },
     {
         "id": [
-            "99114633203506421"
+            "THREAD${__threadNum}_99114633203506421"
         ],
         "numeric_id_b": [
             true
@@ -10482,7 +10482,7 @@
     },
     {
         "id": [
-            "9963389353506421"
+            "THREAD${__threadNum}_9963389353506421"
         ],
         "numeric_id_b": [
             true
@@ -10702,7 +10702,7 @@
     },
     {
         "id": [
-            "9971430673506421"
+            "THREAD${__threadNum}_9971430673506421"
         ],
         "numeric_id_b": [
             true
@@ -10897,7 +10897,7 @@
     },
     {
         "id": [
-            "9938780083506421"
+            "THREAD${__threadNum}_9938780083506421"
         ],
         "numeric_id_b": [
             true
@@ -11087,7 +11087,7 @@
     },
     {
         "id": [
-            "9938546233506421"
+            "THREAD${__threadNum}_9938546233506421"
         ],
         "numeric_id_b": [
             true
@@ -11275,7 +11275,7 @@
     },
     {
         "id": [
-            "9914692543506421"
+            "THREAD${__threadNum}_9914692543506421"
         ],
         "numeric_id_b": [
             true
@@ -11439,7 +11439,7 @@
     },
     {
         "id": [
-            "99125347224806421"
+            "THREAD${__threadNum}_99125347224806421"
         ],
         "numeric_id_b": [
             true
@@ -11690,7 +11690,7 @@
     },
     {
         "id": [
-            "99125343274706421"
+            "THREAD${__threadNum}_99125343274706421"
         ],
         "numeric_id_b": [
             true
@@ -11940,7 +11940,7 @@
     },
     {
         "id": [
-            "99125141061606421"
+            "THREAD${__threadNum}_99125141061606421"
         ],
         "numeric_id_b": [
             true
@@ -12161,7 +12161,7 @@
     },
     {
         "id": [
-            "99125228576706421"
+            "THREAD${__threadNum}_99125228576706421"
         ],
         "numeric_id_b": [
             true
@@ -12329,7 +12329,7 @@
     },
     {
         "id": [
-            "99125175265006421"
+            "THREAD${__threadNum}_99125175265006421"
         ],
         "numeric_id_b": [
             true
@@ -12518,7 +12518,7 @@
     },
     {
         "id": [
-            "99125175288506421"
+            "THREAD${__threadNum}_99125175288506421"
         ],
         "numeric_id_b": [
             true
@@ -12718,7 +12718,7 @@
     },
     {
         "id": [
-            "99125128230106421"
+            "THREAD${__threadNum}_99125128230106421"
         ],
         "numeric_id_b": [
             true
@@ -12866,7 +12866,7 @@
     },
     {
         "id": [
-            "99125190118006421"
+            "THREAD${__threadNum}_99125190118006421"
         ],
         "numeric_id_b": [
             true
@@ -13009,7 +13009,7 @@
     },
     {
         "id": [
-            "99125175285306421"
+            "THREAD${__threadNum}_99125175285306421"
         ],
         "numeric_id_b": [
             true
@@ -13178,7 +13178,7 @@
     },
     {
         "id": [
-            "99125228576306421"
+            "THREAD${__threadNum}_99125228576306421"
         ],
         "numeric_id_b": [
             true
@@ -13341,7 +13341,7 @@
     },
     {
         "id": [
-            "99125125284306421"
+            "THREAD${__threadNum}_99125125284306421"
         ],
         "numeric_id_b": [
             true
@@ -13523,7 +13523,7 @@
     },
     {
         "id": [
-            "99125230441406421"
+            "THREAD${__threadNum}_99125230441406421"
         ],
         "numeric_id_b": [
             true
@@ -13689,7 +13689,7 @@
     },
     {
         "id": [
-            "99125175275806421"
+            "THREAD${__threadNum}_99125175275806421"
         ],
         "numeric_id_b": [
             true
@@ -13860,7 +13860,7 @@
     },
     {
         "id": [
-            "99125109850506421"
+            "THREAD${__threadNum}_99125109850506421"
         ],
         "numeric_id_b": [
             true
@@ -14062,7 +14062,7 @@
     },
     {
         "id": [
-            "99130894241406421"
+            "THREAD${__threadNum}_99130894241406421"
         ],
         "numeric_id_b": [
             true
@@ -14416,7 +14416,7 @@
     },
     {
         "id": [
-            "99125190117106421"
+            "THREAD${__threadNum}_99125190117106421"
         ],
         "numeric_id_b": [
             true
@@ -14556,7 +14556,7 @@
     },
     {
         "id": [
-            "99125139691206421"
+            "THREAD${__threadNum}_99125139691206421"
         ],
         "numeric_id_b": [
             true
@@ -14721,7 +14721,7 @@
     },
     {
         "id": [
-            "99125139758806421"
+            "THREAD${__threadNum}_99125139758806421"
         ],
         "numeric_id_b": [
             true
@@ -14897,7 +14897,7 @@
     },
     {
         "id": [
-            "99125142395906421"
+            "THREAD${__threadNum}_99125142395906421"
         ],
         "numeric_id_b": [
             true
@@ -15061,7 +15061,7 @@
     },
     {
         "id": [
-            "99125146162406421"
+            "THREAD${__threadNum}_99125146162406421"
         ],
         "numeric_id_b": [
             true
@@ -15199,7 +15199,7 @@
     },
     {
         "id": [
-            "99125146165906421"
+            "THREAD${__threadNum}_99125146165906421"
         ],
         "numeric_id_b": [
             true
@@ -15333,7 +15333,7 @@
     },
     {
         "id": [
-            "99125146222806421"
+            "THREAD${__threadNum}_99125146222806421"
         ],
         "numeric_id_b": [
             true
@@ -15471,7 +15471,7 @@
     },
     {
         "id": [
-            "99125154302206421"
+            "THREAD${__threadNum}_99125154302206421"
         ],
         "numeric_id_b": [
             true
@@ -15643,7 +15643,7 @@
     },
     {
         "id": [
-            "99125154303406421"
+            "THREAD${__threadNum}_99125154303406421"
         ],
         "numeric_id_b": [
             true
@@ -15813,7 +15813,7 @@
     },
     {
         "id": [
-            "99125158322806421"
+            "THREAD${__threadNum}_99125158322806421"
         ],
         "numeric_id_b": [
             true
@@ -15950,7 +15950,7 @@
     },
     {
         "id": [
-            "99125165159006421"
+            "THREAD${__threadNum}_99125165159006421"
         ],
         "numeric_id_b": [
             true
@@ -16088,7 +16088,7 @@
     },
     {
         "id": [
-            "99125165166206421"
+            "THREAD${__threadNum}_99125165166206421"
         ],
         "numeric_id_b": [
             true
@@ -16226,7 +16226,7 @@
     },
     {
         "id": [
-            "99125177223406421"
+            "THREAD${__threadNum}_99125177223406421"
         ],
         "numeric_id_b": [
             true
@@ -16364,7 +16364,7 @@
     },
     {
         "id": [
-            "99125177224106421"
+            "THREAD${__threadNum}_99125177224106421"
         ],
         "numeric_id_b": [
             true
@@ -16502,7 +16502,7 @@
     },
     {
         "id": [
-            "99125177228006421"
+            "THREAD${__threadNum}_99125177228006421"
         ],
         "numeric_id_b": [
             true
@@ -16640,7 +16640,7 @@
     },
     {
         "id": [
-            "99125177229706421"
+            "THREAD${__threadNum}_99125177229706421"
         ],
         "numeric_id_b": [
             true
@@ -16778,7 +16778,7 @@
     },
     {
         "id": [
-            "99125110347106421"
+            "THREAD${__threadNum}_99125110347106421"
         ],
         "numeric_id_b": [
             true
@@ -16915,7 +16915,7 @@
     },
     {
         "id": [
-            "99125110533006421"
+            "THREAD${__threadNum}_99125110533006421"
         ],
         "numeric_id_b": [
             true
@@ -17052,7 +17052,7 @@
     },
     {
         "id": [
-            "99125110535206421"
+            "THREAD${__threadNum}_99125110535206421"
         ],
         "numeric_id_b": [
             true
@@ -17189,7 +17189,7 @@
     },
     {
         "id": [
-            "99125110541806421"
+            "THREAD${__threadNum}_99125110541806421"
         ],
         "numeric_id_b": [
             true
@@ -17326,7 +17326,7 @@
     },
     {
         "id": [
-            "99125131020706421"
+            "THREAD${__threadNum}_99125131020706421"
         ],
         "numeric_id_b": [
             true
@@ -17483,7 +17483,7 @@
     },
     {
         "id": [
-            "99125141649106421"
+            "THREAD${__threadNum}_99125141649106421"
         ],
         "numeric_id_b": [
             true
@@ -17644,7 +17644,7 @@
     },
     {
         "id": [
-            "99125146217506421"
+            "THREAD${__threadNum}_99125146217506421"
         ],
         "numeric_id_b": [
             true
@@ -17782,7 +17782,7 @@
     },
     {
         "id": [
-            "99125165339406421"
+            "THREAD${__threadNum}_99125165339406421"
         ],
         "numeric_id_b": [
             true
@@ -17920,7 +17920,7 @@
     },
     {
         "id": [
-            "99125177222606421"
+            "THREAD${__threadNum}_99125177222606421"
         ],
         "numeric_id_b": [
             true
@@ -18060,7 +18060,7 @@
     },
     {
         "id": [
-            "99125192110806421"
+            "THREAD${__threadNum}_99125192110806421"
         ],
         "numeric_id_b": [
             true
@@ -18200,7 +18200,7 @@
     },
     {
         "id": [
-            "99125210022206421"
+            "THREAD${__threadNum}_99125210022206421"
         ],
         "numeric_id_b": [
             true
@@ -18375,7 +18375,7 @@
     },
     {
         "id": [
-            "99125105957606421"
+            "THREAD${__threadNum}_99125105957606421"
         ],
         "numeric_id_b": [
             true
@@ -18530,7 +18530,7 @@
     },
     {
         "id": [
-            "99125110344806421"
+            "THREAD${__threadNum}_99125110344806421"
         ],
         "numeric_id_b": [
             true
@@ -18667,7 +18667,7 @@
     },
     {
         "id": [
-            "99125110344906421"
+            "THREAD${__threadNum}_99125110344906421"
         ],
         "numeric_id_b": [
             true
@@ -18804,7 +18804,7 @@
     },
     {
         "id": [
-            "99125110345106421"
+            "THREAD${__threadNum}_99125110345106421"
         ],
         "numeric_id_b": [
             true
@@ -18941,7 +18941,7 @@
     },
     {
         "id": [
-            "99125110345206421"
+            "THREAD${__threadNum}_99125110345206421"
         ],
         "numeric_id_b": [
             true
@@ -19078,7 +19078,7 @@
     },
     {
         "id": [
-            "99125110535806421"
+            "THREAD${__threadNum}_99125110535806421"
         ],
         "numeric_id_b": [
             true
@@ -19215,7 +19215,7 @@
     },
     {
         "id": [
-            "99125110536106421"
+            "THREAD${__threadNum}_99125110536106421"
         ],
         "numeric_id_b": [
             true
@@ -19349,5 +19349,157 @@
         "access_facet": [
             "Online"
         ]
+    },
+    {
+        "id": [
+            "THREAD${__threadNum}_99129137505906421"
+        ],
+        "numeric_id_b": [
+            true
+        ],
+        "cjk_all": [
+            ""
+        ],
+        "cjk_notes": [
+            ""
+        ],
+        "author_display": [
+            "Charisiadēs, D. A. (Dēmētrēs A.), 1911-1993"
+        ],
+        "author_sort": [
+            "Charisiadēs, D. A. (Dēmētrēs A.), 1911-1993"
+        ],
+        "author_citation_display": [
+            "Charisiadēs, D. A. (Dēmētrēs A.), 1911-1993",
+            "Petros Vergos"
+        ],
+        "author_roles_1display": [
+            "{\"secondary_authors\":[\"Petros Vergos\"],\"translators\":[],\"editors\":[],\"compilers\":[],\"primary_author\":\"Charisiadēs, D. A. (Dēmētrēs A.), 1911-1993\"}"
+        ],
+        "author_s": [
+            "Charisiadēs, D. A. (Dēmētrēs A.), 1911-1993",
+            "Petros Vergos"
+        ],
+        "marc_relator_display": [
+            "Photographer"
+        ],
+        "title_display": [
+            "Princeton University Library Collection of Dēmētrēs A. Charisiadēs Photographs, approximately 1950"
+        ],
+        "title_a_index": [
+            "Princeton University Library Collection of Dēmētrēs A. Charisiadēs Photographs"
+        ],
+        "title_sort": [
+            "Princeton University Library Collection of Dēmētrēs A. Charisiadēs Photographs, approximately 1950"
+        ],
+        "title_no_h_index": [
+            "Princeton University Library Collection of Dēmētrēs A. Charisiadēs Photographs, approximately 1950"
+        ],
+        "title_t": [
+            "Princeton University Library Collection of Dēmētrēs A. Charisiadēs Photographs,"
+        ],
+        "title_citation_display": [
+            "Princeton University Library Collection of Dēmētrēs A. Charisiadēs Photographs"
+        ],
+        "compiled_created_display": [
+            "approximately 1950"
+        ],
+        "compiled_created_t": [
+            "Princeton University Library Collection of Dēmētrēs A. Charisiadēs Photographs,"
+        ],
+        "pub_date_display": [
+            "1950"
+        ],
+        "pub_date_start_sort": [
+            "1950"
+        ],
+        "cataloged_tdt": [
+            "2023-11-30T17:06:43Z"
+        ],
+        "format": [
+            "Manuscript"
+        ],
+        "electronic_access_1display": [
+            "{\"http://arks.princeton.edu/ark:/88435/dsp013x816q94w\":[\"Princeton University Library Finding Aids\",\"Search and Request\"]}"
+        ],
+        "electronic_access_index": [
+            "Search and Request http://arks.princeton.edu/ark:/88435/dsp013x816q94w Princeton University Library Finding Aids"
+        ],
+        "description_display": [
+            "1 box",
+            "2 linear feet"
+        ],
+        "description_t": [
+            "1 box",
+            "2 linear feet"
+        ],
+        "number_of_pages_citation_display": [
+            "1",
+            "2"
+        ],
+        "notes_index": [
+            "Open, growing collection of photographs of Greece by Greek photographer Dēmētrēs A. Charisiadēs.",
+            "Two photographs of Greece by Greek photographer Dēmētrēs A. Charisiadēs in 1950s comprise the collection.",
+            "The collection is open for research."
+        ],
+        "restrictions_note_display": [
+            "The collection is open for research."
+        ],
+        "summary_note_display": [
+            "Open, growing collection of photographs of Greece by Greek photographer Dēmētrēs A. Charisiadēs.",
+            "Two photographs of Greece by Greek photographer Dēmētrēs A. Charisiadēs in 1950s comprise the collection."
+        ],
+        "language_name_display": [
+            "Modern Greek (1453-)"
+        ],
+        "language_facet": [
+            "Greek, Modern (1453-)"
+        ],
+        "publication_place_facet": [
+            "No place, unknown, or undetermined"
+        ],
+        "language_iana_s": [
+            "el"
+        ],
+        "lc_subject_display": [
+            "Greece—20th Century—Photographs"
+        ],
+        "lc_subject_include_archaic_search_terms_index": [
+            "Greece—20th Century—Photographs"
+        ],
+        "subject_unstem_search": [
+            "Greece—20th Century—Photographs"
+        ],
+        "local_subject_unstem_search": null,
+        "siku_subject_unstem_search": null,
+        "homoit_subject_unstem_search": null,
+        "fast_subject_unstem_search": null,
+        "subject_facet": [
+            "Greece—20th Century—Photographs",
+            "Photographs, Original"
+        ],
+        "aat_s": [
+            "Photographs, Original"
+        ],
+        "subject_topic_facet": [
+            "Greece",
+            "Photographs"
+        ],
+        "genre_facet": [
+            "Photographs, Original"
+        ],
+        "related_name_json_1display": [
+            "{\"Auctioneer\":[\"Petros Vergos\",\"Petros Vergos\"]}"
+        ],
+        "standard_no_index": [
+            "C1756"
+        ],
+        "subject_era_facet": [
+            "20th Century"
+        ],
+        "name_title_browse_s": [
+            "Charisiadēs, D. A. (Dēmētrēs A.), 1911-1993. Princeton University Library Collection of Dēmētrēs A. Charisiadēs Photographs"
+        ],
+        "access_facet": []
     }
 ]
