@@ -27,6 +27,8 @@ ssh deploy@loadtest1.lib.princeton.edu
 jmeter -n -t /home/deploy/solr_load_testing/solr_test_plan.jmx -e -l /home/deploy/solr_load_testing/test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o /home/deploy/solr_tests/test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
 # To test writes:
 JVM_ARGS="-Xms2048m -Xmx2048m" jmeter -n -t /home/deploy/solr_load_testing/solr_write_test_plan.jmx -e -l /home/deploy/solr_load_testing/write_test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o /home/deploy/solr_tests/write_test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
+# To test facet.contains queries:
+jmeter -n -t /home/deploy/solr_load_testing/solr_facet_contains_test_plan.jmx -e -l /home/deploy/solr_load_testing/facet_contains_test_report-$(date +"%Y-%m-%d:%H:%M:%S").jtl -o /home/deploy/solr_tests/facet_contains_test_results-$(date +"%Y-%m-%d:%H:%M:%S")/
 ```
 * Look at the results on the web at [loadtest.lib.princeton.edu/solr_tests/](https://loadtest.lib.princeton.edu/solr_tests/) (VPN required)
 ## User Defined Variables by Environment
