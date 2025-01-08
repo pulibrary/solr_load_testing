@@ -72,3 +72,12 @@ lrwxr-xr-x  1 kadelm  admin  20 May 30 09:28 /opt/homebrew/opt/jmeter -> ../Cell
 
 ### Record the trial in the spreadsheet
 Record what experiment you did, and a link to the report that was generated, in [this spreadsheet](https://docs.google.com/spreadsheets/d/1zvbCHYgnx0KFNtwVmNV6-yHDJN84kIRKbO5YvywiYFk/edit?usp=sharing).
+
+## Tips on planning a useful test
+
+* When we deploy a new solr configuration with `pul_solr`, it clears the solr caches (Filter Cache, Query Cache, etc).  If you want to compare two different configurations, make sure to deploy them both fresh before running your test (unless your test is specifically investigating what happens with a full cache).
+
+## Tips on analyzing the data
+
+* If you are comparing between two tests, the dashboard's median response time and percentiles can be useful metrics to compare.
+* The charts tend not to be very useful unless you are trying to see the impact of a particular event that happened _during_ your test (e.g. a cache gradually filled, or the solr box hit some resource limit)
