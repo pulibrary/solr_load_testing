@@ -1,8 +1,5 @@
 ## Instructions for developing tests
-1. Install jmeter
-```bash
-brew install jmeter 
-```
+1. `devbox shell`
 1. Start jmeter - this will open the GUI, which should only be used when building or editing tests, not when actually load testing.
 ```bash
 jmeter
