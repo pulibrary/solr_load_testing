@@ -1,3 +1,4 @@
+.DS_Store
 jmeter.log
 test_results/*
 !test_results/.keep
