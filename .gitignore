@@ -3,3 +3,5 @@ test_results/*
 !test_results/.keep
 test_results-2023-06*/
 test_results-2024*/
+# macOS cooties
+.DS_Store
