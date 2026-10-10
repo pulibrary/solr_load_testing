@@ -14,9 +14,9 @@ import { SharedArray } from 'k6/data';
 
 const HOST = __ENV.HOST || 'lib-solr9-staging.princeton.edu';
 const PORT = __ENV.PORT || '8983';
-const SOLR_CORE = __ENV.SOLR_CORE || 'catalog-performance';
+const SOLR_CORE = __ENV.SOLR_CORE || 'catalog-staging1';
 const SINGLE_KEYWORD = __ENV.SINGLE_KEYWORD || 'calculus';
-// Optional numFound check for the single keyword request (12941 for "calculus" on staging).
+// Optional numFound check for the single keyword request (12941 for "calculus" on the Solr 8 catalog-performance core).
 const KW_EXPECTED_RESULT_COUNT = __ENV.KW_EXPECTED_RESULT_COUNT;
 const KEYWORD_FILE = __ENV.KEYWORD_FILE || '../keywords.csv';
 

@@ -76,12 +76,12 @@ Pass settings with `-e NAME=value`:
 | --- | --- |
 | `HOST` | `lib-solr9-staging.princeton.edu` |
 | `PORT` | `8983` |
-| `SOLR_CORE` | `catalog-performance` |
+| `SOLR_CORE` | `catalog-staging1` |
 | `VUS` | `200` |
 | `ITERATIONS` | `1000` (per virtual user) |
 | `MAX_DURATION` | `2h` (stops the test if it runs longer) |
 | `SINGLE_KEYWORD` | `calculus` |
-| `KW_EXPECTED_RESULT_COUNT` | not set; when set, also checks `numFound` for the single keyword request (`12941` on staging) |
+| `KW_EXPECTED_RESULT_COUNT` | not set; when set, also checks `numFound` for the single keyword request (`12941` for `calculus` on the Solr 8 `catalog-performance` core) |
 | `KEYWORD_FILE` | `../keywords.csv` (relative to the script) |
 
 Use the `k6-read` devbox script to run the test and save its results. Any
