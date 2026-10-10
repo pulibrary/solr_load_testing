@@ -12,7 +12,7 @@ import { check } from 'k6';
 import exec from 'k6/execution';
 import { SharedArray } from 'k6/data';
 
-const HOST = __ENV.HOST || 'lib-solr-staging.princeton.edu';
+const HOST = __ENV.HOST || 'lib-solr9-staging.princeton.edu';
 const PORT = __ENV.PORT || '8983';
 const SOLR_CORE = __ENV.SOLR_CORE || 'catalog-performance';
 const SINGLE_KEYWORD = __ENV.SINGLE_KEYWORD || 'calculus';

@@ -74,7 +74,7 @@ Pass settings with `-e NAME=value`:
 
 | Variable | Default |
 | --- | --- |
-| `HOST` | `lib-solr8d-staging.princeton.edu` |
+| `HOST` | `lib-solr9-staging.princeton.edu` |
 | `PORT` | `8983` |
 | `SOLR_CORE` | `catalog-performance` |
 | `VUS` | `200` |
