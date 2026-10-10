@@ -10,6 +10,10 @@
       "echo 'Welcome to devbox!' > /dev/null"
     ],
     "scripts": {
+      "k6-read": [
+        "ts=$(date +\"%Y-%m-%d-%H%M%S\")",
+        "K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_PERIOD=\"${K6_WEB_DASHBOARD_PERIOD:-1s}\" K6_WEB_DASHBOARD_EXPORT=\"test_results/k6-read-$ts.html\" k6 run --out \"csv=test_results/k6-read-$ts.csv.gz\" \"$@\" k6/solr_read_test.js"
+      ],
       "test": [
         "echo \"Error: no test specified\" && exit 1"
       ]

@@ -84,20 +84,36 @@ Pass settings with `-e NAME=value`:
 | `KW_EXPECTED_RESULT_COUNT` | not set; when set, also checks `numFound` for the single keyword request (`12941` on staging) |
 | `KEYWORD_FILE` | `../keywords.csv` (relative to the script) |
 
+Use the `k6-read` devbox script to run the test and save its results. Any
+arguments are passed to `k6 run`:
+
 ```bash
-devbox shell
-# Run against staging and save an HTML report
-K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=test_results/k6-read-$(date +"%Y-%m-%d-%H%M%S").html k6 run k6/solr_read_test.js
+# Run against staging with the defaults
+devbox run k6-read
 # Small run against local development
-k6 run -e HOST=orangelight.dev.solr.lndo.site -e PORT=80 -e SOLR_CORE=orangelight-core-dev -e VUS=5 -e ITERATIONS=10 k6/solr_read_test.js
+devbox run k6-read -e HOST=orangelight.dev.solr.lndo.site -e PORT=80 \
+  -e SOLR_CORE=orangelight-core-dev -e VUS=5 -e ITERATIONS=10
 ```
 
-The terminal summary shows response time percentiles and the share of checks
-that passed. Filter by request with the `name` tag (`Single Keyword Request` or
-`Multiple Keyword Request`). While `K6_WEB_DASHBOARD=true` is set, a live
-dashboard is served at <http://localhost:5665>. `K6_WEB_DASHBOARD_EXPORT` saves
-it as a single HTML file when the run ends. k6 skips the report for very short
-runs.
+Each run gives you the equivalent of JMeter's outputs:
+
+| JMeter | k6 |
+| --- | --- |
+| Summary Report | The summary printed at the end of the run |
+| HTML dashboard (`-e -o`) | Live dashboard at <http://localhost:5665> while the test runs, saved to `test_results/k6-read-<timestamp>.html` at the end |
+| `.jtl` / Simple Data Writer | `test_results/k6-read-<timestamp>.csv.gz`, one row per measurement |
+| View Results Tree | Add `--http-debug=full` (use with `-e VUS=1 -e ITERATIONS=1`) |
+
+Notes:
+
+* Set `K6_WEB_DASHBOARD_OPEN=true` to open the live dashboard in your browser.
+* The dashboard updates every second (`K6_WEB_DASHBOARD_PERIOD=1s`). k6 skips
+  the HTML report for runs shorter than a few seconds, so give quick runs
+  enough iterations to last at least 5 seconds.
+* In the CSV, filter on `metric_name` `http_req_duration` for response times.
+  The `name` column is the request (`Single Keyword Request` or
+  `Multiple Keyword Request`) and `status` is the HTTP status code. Read it
+  with `gzip -dc`, or open it in a tool that reads gzipped CSV.
 
 ### Trying out a k6 test from your laptop through an SSH tunnel
 
@@ -123,7 +139,7 @@ Check the tunnel, then run a small test against a catalog collection:
 # List the collections
 curl -s 'http://localhost:8983/solr/admin/collections?action=LIST&wt=json'
 k6 run -e HOST=localhost -e PORT=8983 -e SOLR_CORE=catalog-staging1 \
-  -e VUS=2 -e ITERATIONS=5 k6/solr_read_test.js
+  -e VUS=2 -e ITERATIONS=30 k6/solr_read_test.js
 # Close the tunnel when you are done
 pkill -f 'L 8983:lib-solr9-staging'
 ```
