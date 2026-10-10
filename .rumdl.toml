@@ -1,0 +1,4 @@
+[MD013]
+# Long commands in code blocks and wide tables can't be wrapped.
+code-blocks = false
+tables = false
