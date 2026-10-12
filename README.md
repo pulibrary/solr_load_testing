@@ -115,6 +115,36 @@ Notes:
   `Multiple Keyword Request`) and `status` is the HTTP status code. Read it
   with `gzip -dc`, or open it in a tool that reads gzipped CSV.
 
+### Running a k6 test from loadtest1.lib.princeton.edu
+
+* Settings are passed with `-e NAME=value` instead of being saved in a test
+  plan. The defaults point at staging (see the [read test](#read-test)
+  variables).
+* This project is checked out at `/home/deploy/solr_load_testing`
+* You can make changes locally, commit and push them to a branch, then check
+  that branch out on the server
+* SSH onto the box
+
+```bash
+ssh deploy@loadtest1.lib.princeton.edu
+```
+
+* Run the k6 test from loadtest1.lib.princeton.edu. Write the results to
+  `/home/deploy/solr_tests/` so they are published with the JMeter results.
+
+```bash
+cd /home/deploy/solr_load_testing
+# To test reads:
+ts=$(date +"%Y-%m-%d-%H%M%S")
+K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=/home/deploy/solr_tests/k6-read-$ts.html k6 run --out csv=/home/deploy/solr_tests/k6-read-$ts.csv.gz k6/solr_read_test.js
+```
+
+* A full run can take up to two hours. Run it inside `tmux` or `screen` so it
+  keeps going if your SSH connection drops.
+* Look at the results on the web at
+  [loadtest.lib.princeton.edu/solr_tests/](https://loadtest.lib.princeton.edu/solr_tests/)
+  (VPN required). Open `k6-read-<timestamp>.html` for the report.
+
 ### Trying out a k6 test from your laptop through an SSH tunnel
 
 The staging Solr load balancer only accepts connections from the library
@@ -169,9 +199,9 @@ keyword_file_full_path [full path to this repo + /keywords.csv]
 ### From loadtest1.lib.princeton.edu - against Staging
 
 ```text
-host lib-solr8d-staging.princeton.edu
+host lib-solr9-staging.princeton.edu
 port 8983
-solr_core catalog-performance (for read test) or catalog-write-performance (for write test)
+solr_core catalog-staging1 (for read test) or catalog-write-performance (for write test)
 kw_expected_result_count 12941
 sitemap_expected_result_count 18170086
 keyword_file_full_path /home/deploy/keywords.csv
