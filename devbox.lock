@@ -110,6 +110,44 @@
           "store_path": "/nix/store/q66535nhkswank91fck9vjgsc65d07jz-jmeter-5.6.3"
         }
       }
+    },
+    "k6@latest": {
+      "last_modified": "2026-10-07T09:43:42Z",
+      "resolved": "github:NixOS/nixpkgs/39ad350a0602fa0a58a544344e3e9187526ea45c#k6",
+      "source": "devbox-search",
+      "version": "2.2.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1mfsgrnz2h6a85skxsr5kr1mxb7i9dj4-k6-2.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/1mfsgrnz2h6a85skxsr5kr1mxb7i9dj4-k6-2.2.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x5qfmvac4byhnjjzskwz090gsis266zi-k6-2.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/x5qfmvac4byhnjjzskwz090gsis266zi-k6-2.2.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z3b2nyi6mkmpmrk2xd8h5vy4jmpl82dr-k6-2.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/z3b2nyi6mkmpmrk2xd8h5vy4jmpl82dr-k6-2.2.0"
+        }
+      }
     }
   }
 }
